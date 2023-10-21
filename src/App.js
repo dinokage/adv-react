@@ -1,23 +1,43 @@
-import logo from './logo.svg';
 import './App.css';
 
+const topFruits = [
+  {
+    id:1,
+    name: "nimmakay",
+    description: "pullaga untadhi",
+    price: 69.50
+  },
+  {
+    id:2,
+    name: "danimmakay",
+    description: "erraga untadhi",
+    price: 699.50
+  },
+  {
+    id:3,
+    name: "usirikay",
+    description: "baaga pullaga untadhi",
+    price: 669.50
+  },
+  {
+    id:4,
+    name: "vattakay",
+    description: "chinnaga untadhi",
+    price: 469.50
+  }
+];
+
 function App() {
+  const fruitsList = topFruits.map(fruit => {
+    const data = `${fruit.name} - ${fruit.price}`
+    return <li>{data}</li>
+  })
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Votkay fruitShop</h1>
+      <ul>
+        {fruitsList}
+      </ul>
     </div>
   );
 }
