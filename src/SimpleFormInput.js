@@ -7,7 +7,7 @@ export default function SimpleformInput() {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(`form submitted with data ${value}`)
+        alert(`form submitted with data ${value}`)
         
     }
     const tempVariable = useContext(contextExample)
