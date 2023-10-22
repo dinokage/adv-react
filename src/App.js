@@ -2,6 +2,7 @@ import './App.css';
 import './FruitList';
 import FruitList from './FruitList';
 import SimpleformInput from './SimpleFormInput';
+import ToggleButton from './ToggleButton';
 import { UserContext } from './Contexts';
 import { useState } from 'react';
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <UserContext.Provider value={user}>
       <FruitList />
       <SimpleformInput />
+      <ToggleButton />
       </UserContext.Provider>
       
     </div>
