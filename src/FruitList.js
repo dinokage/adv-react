@@ -1,3 +1,6 @@
+import { useContext } from "react";
+import { UserContext } from "./Contexts";
+
 const topFruits = [
     {
       id:1,
@@ -30,8 +33,11 @@ export default function FruitList() {
     const data = `${fruit.name} - ${fruit.price}`
     return <li>{data}</li>
   })
+  const user = useContext(UserContext)
+  console.log(user)
   return (
     <>
+    <p>{user}</p>
     <ul>
         {fruitsList}
       </ul>

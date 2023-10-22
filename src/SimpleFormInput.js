@@ -1,5 +1,5 @@
 import { useState, useContext } from 'react';
-import { contextExample } from './Contexts';
+import { UserContext } from './Contexts';
 export default function SimpleformInput() {
     const [value, setValue] = useState('');
     const handleChange = (e) => {
@@ -10,7 +10,7 @@ export default function SimpleformInput() {
         alert(`form submitted with data ${value}`)
         
     }
-    const tempVariable = useContext(contextExample)
+    const tempVariable = useContext(UserContext)
     return ( 
         <>
         {tempVariable}

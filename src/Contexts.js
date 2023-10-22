@@ -1,3 +1,6 @@
 import {createContext} from 'react';
 
-export const contextExample = createContext('hadavidi')
+export const UserContext = createContext({
+    name: "dinokage",
+    email: "yerradinesh01@gmail.com"
+})

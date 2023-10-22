@@ -2,15 +2,17 @@ import './App.css';
 import './FruitList';
 import FruitList from './FruitList';
 import SimpleformInput from './SimpleFormInput';
-import { contextExample } from './Contexts';
+import { UserContext } from './Contexts';
+import { useState } from 'react';
 function App() {
+  const [user] = useState('pewpew')
   return (
     <div>
       <h1>Votkay fruitShop</h1>
-      <contextExample.Provider>
+      <UserContext.Provider value={user}>
       <FruitList />
       <SimpleformInput />
-      </contextExample.Provider>
+      </UserContext.Provider>
       
     </div>
   );
