@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import { contextExample } from './Contexts';
 export default function SimpleformInput() {
     const [value, setValue] = useState('');
     const handleChange = (e) => {
@@ -9,8 +10,10 @@ export default function SimpleformInput() {
         console.log(`form submitted with data ${value}`)
         
     }
+    const tempVariable = useContext(contextExample)
     return ( 
         <>
+        {tempVariable}
         <p>{value}</p>
         <form onSubmit={handleSubmit}> 
           <input 
