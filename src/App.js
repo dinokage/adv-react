@@ -4,6 +4,7 @@ import FruitList from './FruitList';
 import SimpleformInput from './SimpleFormInput';
 import ToggleButton from './ToggleButton';
 import RandomUserData from './RandomUserData';
+import MyWallet from './MyWallet';
 import { UserContext } from './Contexts';
 import { useState } from 'react';
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <SimpleformInput />
       <ToggleButton />
       <RandomUserData />
+      <MyWallet />
       </UserContext.Provider>
       
     </div>
