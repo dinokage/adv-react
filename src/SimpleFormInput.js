@@ -12,7 +12,7 @@ export default function SimpleformInput() {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert(`form submitted with data ${value}`)
+      value.length > 0 ?  alert(`form submitted with data ${value}`) : console.log()
         
     }
     const tempVariable = useContext(UserContext)
