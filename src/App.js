@@ -3,6 +3,7 @@ import './FruitList';
 import FruitList from './FruitList';
 import SimpleformInput from './SimpleFormInput';
 import ToggleButton from './ToggleButton';
+import RandomUserData from './RandomUserData';
 import { UserContext } from './Contexts';
 import { useState } from 'react';
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <FruitList />
       <SimpleformInput />
       <ToggleButton />
+      <RandomUserData />
       </UserContext.Provider>
       
     </div>
